@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PC-Centre </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../fontawesome-free-7.1.0-web/css/all.min.css">
+    <style>
+
+    </style>
+</head>
+<header class="navbar-container">
+    <a class="logo-brand" href="../../index.html">
+        <img src="../../images/Logo-first.png" alt="">
+        <span class="logo-text">ＰＣＣΞＮＴＲΞ</span>
+        <span class="logo-text1">𝓟𝓬𝓬𝓮𝓷𝓽𝓻𝓮</span>
+    </a>
+
+    <button class="hamburger" id="btnHamb"><i class="fa-solid fa-bars"></i></button>
+
+    <nav class="navbar-links">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link active" href="../../index.html">Home</a></li>
+            <li class="navbar-item"><a class="navbar-link " href="../../aboutus-page.html">About</a></li>
+
+            <li class="navbar-item">
+                <a class="navbar-link" href="#">Products <i
+                        class="fa-solid fa-caret-down"></i></a>
+
+
+                <div class="mega" style="width: 250px; line-height: 35px; left: -43px;">
+                    <div class="mega-column">
+                        <div class="mega-text" style="text-decoration: none;"><a href="../../products/monitor/products-page.html">Displays & Monitors</a></div>
+                        <div class="mega-text" style="text-decoration: none;"><a href="../../products/laptop/products-page.html">Laptops</a></div>
+                        <div class="mega-text" style="text-decoration: none;"><a href="../../products/processors/products-page.html">Processors (CPU)</a></div>
+                        <div class="mega-text" style="text-decoration: none;"><a href="../../products/storage-devices/products-page.html">Storage Devices</a></div>
+                        <div class="mega-text" style="text-decoration: none;"><a href="../../products/memory/products-page.html">Memory (RAM)</a></div>
+                        <div class="mega-text" style="text-decoration: none;"><a href="../../products/mother-board/products-page.html">Motherboards</a></div>
+                    </div>
+            <li class="navbar-item">
+                <a class="navbar-link" href="#">Accessories <i class="fa-solid fa-caret-down"></i></a>
+                <div class="mega accessories" style="width: 195px;">
+                    <div class="mega-column">
+                        <div class="mega-text" style="text-decoration: none;"><a href="../../products/laptop-accessories/products-page.html" style="width: 250px; margin-bottom: 20px;">Laptop Bags</a></div>
+                        <div class="mega-text" style="text-decoration: none;"><a href="../../products/display-cables/products-page.html" style="width: 250px; margin-bottom: 20px;">All Accessories</a></div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="navbar-item"><a class="navbar-link" href="../../offers.html">Offers</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="../../support-page.html">Support</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="../../docs.html">Docs</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-container">
+        <div class="search">
+            <input type="text" placeholder="Search products...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="utils">
+            <a href="../../login_Page/index.html"><button class="icon-btn"><i class="fa-regular fa-user"></i></button></a>
+            <a href="#"><button class="icon-btn"><i class="fa-solid fa-cart-shopping"></i></button></a>
+        </div>
+    </div>
+</header>
+
+<div id="mobileMenu">
+
+
+    <li class="navbar-item"><a class="navbar-link" href="../../index.html">Home</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="../../aboutus-page.html">About us</a></li>
+
+    <li class="navbar-item"><a href="#" class="navbar-link" id="mobileProductsBtn">Products <i
+                class="fa-solid fa-caret-down display"></i></a></li>
+
+    <div class="mobile-dropdown" id="mobileProductsDropdown">
+
+        <div class="mega-text" style="text-decoration: none;"><a href="../../products/monitor/products-page.html">Displays & Monitors</a></div>
+        <div class="mega-text" style="text-decoration: none;"><a href="../../products/laptop/products-page.html">Laptops</a></div>
+        <div class="mega-text" style="text-decoration: none;"><a href="../../products/processors/products-page.html">Processors (CPU)</a></div>
+        <div class="mega-text" style="text-decoration: none;"><a href="../../products/storage-devices/products-page.html">Storage Devices</a></div>
+        <div class="mega-text" style="text-decoration: none;"><a href="../../products/memory/products-page.html">Memory (RAM)</a></div>
+        <div class="mega-text" style="text-decoration: none;"><a href="../../products/mother-board/products-page.html">Motherboards</a></div>
+
+    </div>
+
+    <li class="navbar-item"><a class="navbar-link" href="../../offers.html">Offers</a></li>
+
+    <li class="navbar-item"><a href="#" class="navbar-link" id="mobileAccessoriesBtn">Accessories
+            <i class="fa-solid fa-caret-down display"></i>
+        </a>
+
+        <div class="mobile-dropdown" id="mobileAccessoriesDropdown">
+                        <div class="mega-text" style="text-decoration: none;"><a href="../../products/laptop-accessories/products-page.html" style="width: 250px; margin-bottom: 20px;">Laptop Bags</a></div>
+                        <div class="mega-text" style="text-decoration: none;"><a href="../../products/display-cables/products-page.html" style="width: 250px; margin-bottom: 20px;">All Accessories</a></div>
+        </div>
+    </li>
+    <li class="navbar-item"><a class="navbar-link" href="../../support-page.html">Support</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="../../docs.html">Docs</a></li>
+</div>
+
+<div class="banner-image">
+    <img src="images/storage-banner.jpg" alt="" style=" width: 100%; height: 500px;">
+</div>
+  <main class="container">
+    <section class="products" id="products">
+      <div class="card" id="p1">
+        <img src="images/storage-image1.jpg" alt="ASUS ROG Swift Gaming Monitor">
+        <div class="pad">
+          <h3>WD My Passport Hard Drive Black</h3>
+          <p>WD My Passport 5TB External USB 3.0 Portable Hard Drive Black</p>
+          <b>Rs 42,500</b>
+        </div>
+        <button class="btn-view" onclick="handleView('p1')"><i class="fa-solid fa-cart-shopping"></i><span>View Details</span></button>
+      </div>
+      <div class="card" id="p2">
+        <img src="images/storage-image2.jpg" alt="ASUS TUF GAMING Moniter">
+        <div class="pad">
+          <h3>Verbatim 512GB Internal SSD</h3>
+          <p>Verbatim 512GB Vi550 SATA III 2.5” Internal SSD</p>
+          <b>Rs 14,800</b>
+        </div>
+        <button class="btn-view" onclick="handleView('p2')"><i class="fa-solid fa-cart-shopping"></i><span>View Details</span></button>
+      </div>
+      <div class="card" id="p3">
+        <img src="images/storage-image3.jpg" alt="ASUS ROG Strix Gaming Monitor">
+        <div class="pad">
+          <h3>ADATA Legend</h3>
+          <p>ADATA Legend 710 256GB PCIe Gen3 x4 M.2 2280 NVMe Solid State Drive</p>
+          <b>Rs 11,000</b>
+        </div>
+        <button class="btn-view" onclick="handleView('p3')"><i class="fa-solid fa-cart-shopping"></i><span>View Details</span></button>
+      </div>
+      <div class="card" id="p4">
+        <img src="images/storage-image4.jpg" alt="ASUS ROG Strix Gaming Monitor">
+        <div class="pad">
+          <h3>Transcend 225s 500GB</h3>
+          <p>Transcend 225s 500GB SATA III 6Gb/s Internal SSD Solid State Drive for PC and Laptop</p>
+          <b>Rs 18,000</b>
+        </div>
+        <button class="btn-view" onclick="handleView('p4')"><i class="fa-solid fa-cart-shopping"></i><span>View Details</span></button>
+      </div>
+      <div class="card" id="p5">
+        <img src="images/storage-image5.jpg" alt="Samsung Odyssey G6 32 Gaming Monitor">
+        <div class="pad">
+          <h3>Transcend ESD380C SSD Type-C USB</h3>
+          <p>Transcend ESD380C 4TB External SSD Type-C USB 3.2 Gen 2 SSD</p>
+          <b>Rs 119,000</b>
+        </div>
+        <button class="btn-view" onclick="handleView('p5')"><i class="fa-solid fa-cart-shopping"></i><span>View Details</span></button>
+      </div>
+      <div class="card" id="p6">
+        <img src="images/storage-image6.jpg" alt="HP 24 Inch P24V G5 FHD Monitor">
+        <div class="pad">
+          <h3>Transcend ESD410C SSD</h3>
+          <p>Transcend ESD410C 4TB Portable SSD External Solid State Drive</p>
+          <b>119,000</b>
+        </div>
+        <button class="btn-view" onclick="handleView('p6')"><i class="fa-solid fa-cart-shopping"></i><span>View Details</span></button>
+      </div>
+      <div class="card" id="p7">
+        <img src="images/storage-image7.jpg" alt="ViewSonic Calibrated Monitor">
+        <div class="pad">
+          <h3>Transcend SSD Type-C USB</h3>
+          <p>Transcend ESD330C 2TB External SSD Type-C USB 3.2 Gen2 </p>
+          <b>Rs 48,500</b>
+        </div>
+        <button class="btn-view" onclick="handleView('p7')"><i class="fa-solid fa-cart-shopping"></i><span>View Details</span></button>
+      </div>
+      <div class="card" id="p8">
+        <img src="images/storage-image8.jpg" alt="ViewSonic XG275D1 G-Monitor">
+        <div class="pad">
+          <h3>Transcend External SSD Type-C</h3>
+          <p>Transcend ESD360C 4TB External SSD Type-C Upto 2,000 MB/s Speed</p>
+          <b>Rs 114,000</b>
+        </div>
+        <button class="btn-view" onclick="handleView('p8')"><i class="fa-solid fa-cart-shopping"></i><span>View Details</span></button>
+      </div>
+      <div class="card" id="p9">
+        <img src="images/storage-image9.jpg" alt="AOC Q27G40ZE Gaming Monitor">
+        <div class="pad">
+          <h3>Transcend External SSD USB 3.2 Gen2</h3>
+          <p> Intel Core i9-12900KF – Core i9 12th Gen Alder Lake</p>
+          <b>Rs 52,000</b>
+        </div>
+        <button class="btn-view" onclick="handleView('p9')"><i class="fa-solid fa-cart-shopping"></i><span>View Details</span></button>
+      </div>
+      <div class="card" id="p10">
+        <img src="images/storage-image10.jpg" alt="Lenovo Legion IPS Gaming Monitor">
+        <div class="pad">
+          <h3>Transcend External SSD USB 3.2 Gen2</h3>
+          <p>Transcend ESD310C 2TB External SSD USB 3.2 Gen2 Up to 1050 MB/s</p>
+          <b>Rs 52,000</b>
+        </div>
+        <button class="btn-view" onclick="handleView('p10')"><i class="fa-solid fa-cart-shopping"></i><span>View Details</span></button>
+      </div>
+      </section>
+  </main>
+  
+  <!-- Full-screen Product Modal -->
+  <div id="product-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-window">
+      <button id="modal-close" class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body">
+        <div class="modal-left">
+          <img id="modal-image" alt="">
+        </div>
+        <div class="modal-right">
+          <h2 id="modal-title"></h2>
+          <p id="modal-desc" style="color: var(--muted);"></p>
+          <div class="price-row"><span class="price" id="modal-price"></span></div>
+          
+          <div class="qty-controls" style="margin: 12px 0;">
+            <button id="modal-minus" class="secondary">-</button>
+            <input id="modal-qty" type="number" min="1" value="1">
+            <button id="modal-plus" class="secondary">+</button>
+          </div>
+          
+          <div class="modal-actions">
+            <button id="modal-buy" class="primary"><i class="fa-solid fa-bolt"></i>&nbsp;Buy Now</button>
+          </div>
+          
+          <form id="modal-form" class="form hidden" style="margin-top: 14px;">
+            <div class="field">
+              <label for="form-name">Full Name</label>
+              <input id="form-name" type="text" placeholder="Your name">
+            </div>
+            <div class="field">
+              <label for="form-phone">Phone</label>
+              <input id="form-phone" type="tel" placeholder="03xx-xxxxxxx">
+            </div>
+            <div class="field">
+              <label for="form-address">Address</label>
+              <textarea id="form-address" rows="3" placeholder="Delivery address"></textarea>
+            </div>
+            <div class="field">
+              <label for="form-email">Email (optional)</label>
+              <input id="form-email" type="email" placeholder="you@example.com">
+            </div>
+            <div class="actions">
+              <button type="submit" class="primary"><i class="fa-solid fa-check"></i>&nbsp;Place Order</button>
+              <button type="button" id="form-cancel" class="ghost">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<section class="footer" style="background: #f3efef; margin-top:-55px; padding-top: 40px;">
+    <!-- ========== BODY FOOTER  ========== -->
+    <footer class="pc-footer">
+
+        <div class="footer-container">
+
+            <!-- ABOUT -->
+            <div class="footer-section">
+                <h3 class="footer-h3">About PC-Centre</h3>
+                <p class="footer-para">
+                    <em>
+                        PC-Centre is a trusted provider of IT products & services with 2+ years of experience
+                        and 1,000+ products from top brands. We offer hardware, software, networking,
+                        installations, and enterprise solutions with strong after-sales support.
+                    </em>
+                </p>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="footer-section">
+                <h3 class="footer-h3">Quick Links</h3>
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="../../index.html" class="footer-a">Home</a></li>
+                    <li class="footer-li"><a href="../../aboutus-page.html" class="footer-a">About</a></li>
+                    <li class="footer-li"><a href="../../products/monitor/products-page.html" class="footer-a">Products</a></li>
+                    <li class="footer-li"><a href="../../products/display-cables/products-page.html" class="footer-a">Accessories</a></li>
+                    <li class="footer-li"><a href="../../offers.html" class="footer-a">Offers</a></li>
+                    <li class="footer-li"><a href="../../support-page.html" class="footer-a">Support</a></li>
+                    <li class="footer-li"><a href="../../docs.html" class="footer-a">Docs</a></li>
+                </ul>
+            </div>
+
+            <!-- PRODUCT CATEGORIES -->
+            <div class="footer-section">
+                <h3 class="footer-h3">Categories</h3>
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="../../products/monitor/products-page.html" class="footer-a">Monitor</a></li>
+                    <li class="footer-li"><a href="../../products/mother-board/products-page.html" class="footer-a">Motherboards </a></li>
+                    <li class="footer-li"><a href="../../products/laptop/products-page.html" class="footer-a">Laptops</a></li>
+                    <li class="footer-li"><a href="../../products/storage-devices/products-page.html" class="footer-a">Storage-devices</a></li>
+                    <li class="footer-li"><a href="../../products/memory/products-page.html" class="footer-a">Memory</a></li>
+                    <li class="footer-li"><a href="../../products/processors/products-page.html" class="footer-a">Processors</a></li>
+                    <li class="footer-li"><a href="../../products/laptop-accessories/products-page.html" class="footer-a">Laptop-bags</a></li>
+                    <li class="footer-li"><a href="../../products/display-cables/products-page.html" class="footer-a">All-Accessories</a></li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="footer-section">
+                <h3 class="footer-h3">Contact Us</h3>
+                <p class="footer-paragraph"><em> Saddar, Karachi – ORIENT CENTER </em></p>
+
+                <button class="location-btn"
+                    onclick="window.open('https://maps.google.com/?q=Orient+Centre+Saddar+Karachi','_blank')">
+                    <i class="fa-solid fa-location-crosshairs"></i> Open Location
+                </button>
+
+                <p class="footer-email"> <b>Email:</b><em>pc-centre@gmail.com</em></p>
+                <p class="footer-phone"> <b>Phone:</b> 03322327180</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 <em> <b>PC-Centre — All Rights Reserved</b></em>
+
+        </div>
+
+    </footer>
+
+</section>
+
+  <script src="../../script.js"></script>
+<script src="script.js"></script>
+  <script src="../../js/bootstrap.js"></script>
+  <script src="../../fontawesome-free-7.1.0-web/js/all.min.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PC-Centre </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-7.1.0-web/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+
+    </style>
+</head>
+<header class="navbar-container">
+    <a class="logo-brand" href="index.html">
+        <img src="images/Logo-first.png" alt="">
+        <span class="logo-text">ＰＣＣΞＮＴＲΞ</span>
+        <span class="logo-text1">𝓟𝓬𝓬𝓮𝓷𝓽𝓻𝓮</span>
+    </a>
+
+    <button class="hamburger" id="btnHamb"><i class="fa-solid fa-bars"></i></button>
+
+    <nav class="navbar-links">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link active" href="index.html">Home</a></li>
+            <li class="navbar-item"><a class="navbar-link " href="aboutus-page.html">About</a></li>
+
+            <li class="navbar-item">
+                <a class="navbar-link" href="#">Products <i class="fa-solid fa-caret-down"></i></a>
+
+
+                <div class="mega" style="width: 250px; line-height: 35px; left: -43px;">
+                    <div class="mega-column">
+                        <div class="mega-text" style="text-decoration: none;"><a
+                                href="products/monitor/products-page.html">Displays & Monitors</a></div>
+                        <div class="mega-text" style="text-decoration: none;"><a
+                                href="products/laptop/products-page.html">Laptops</a></div>
+                        <div class="mega-text" style="text-decoration: none;"><a
+                                href="products/processors/products-page.html">Processors (CPU)</a></div>
+                        <div class="mega-text" style="text-decoration: none;"><a
+                                href="products/storage-devices/products-page.html">Storage Devices</a></div>
+                        <div class="mega-text" style="text-decoration: none;"><a
+                                href="products/memory/products-page.html">Memory (RAM)</a></div>
+                        <div class="mega-text" style="text-decoration: none;"><a
+                                href="products/mother-board/products-page.html">Motherboards</a></div>
+                    </div>
+            <li class="navbar-item">
+                <a class="navbar-link" href="#">Accessories <i class="fa-solid fa-caret-down"></i></a>
+                <div class="mega accessories" style="width:195px;">
+                    <div class="mega-column">
+                        <div class="mega-text" style="text-decoration: none;"><a
+                                href="products/laptop-accessories/products-page.html"
+                                style="width: 250px; margin-bottom: 20px;">Laptop Bags</a></div>
+                        <div class="mega-text" style="text-decoration: none;"><a
+                                href="products/display-cables/products-page.html"
+                                style="width: 250px; margin-bottom: 20px;">All Accessories</a></div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="navbar-item"><a class="navbar-link" href="offers.html">Offers</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="support-page.html">Support</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="docs.html">Docs</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-container">
+        <div class="search">
+            <input type="text" placeholder="Search products...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="utils">
+            <a href="login_Page/index.html"><button class="icon-btn"><i class="fa-regular fa-user"></i></button></a>
+            <a href="#"><button class="icon-btn"><i class="fa-solid fa-cart-shopping"></i></button></a>
+        </div>
+    </div>
+</header>
+
+<div id="mobileMenu">
+
+
+    <li class="navbar-item"><a class="navbar-link" href="index.html">Home</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="aboutus-page.html">About</a></li>
+
+    <li class="navbar-item"><a href="#" class="navbar-link" id="mobileProductsBtn">Products <i
+                class="fa-solid fa-caret-down display"></i></a></li>
+
+    <div class="mobile-dropdown" id="mobileProductsDropdown">
+
+        <div class="mega-text" style="text-decoration: none;"><a href="products/monitor/products-page.html">Displays &
+                Monitors</a></div>
+        <div class="mega-text" style="text-decoration: none;"><a href="products/laptop/products-page.html">Laptops</a>
+        </div>
+        <div class="mega-text" style="text-decoration: none;"><a
+                href="products/processors/products-page.html">Processors (CPU)</a></div>
+        <div class="mega-text" style="text-decoration: none;"><a
+                href="products/storage-devices/products-page.html">Storage Devices</a></div>
+        <div class="mega-text" style="text-decoration: none;"><a href="products/memory/products-page.html">Memory
+                (RAM)</a></div>
+        <div class="mega-text" style="text-decoration: none;"><a
+                href="products/mother-board/products-page.html">Motherboards</a></div>
+
+    </div>
+
+    <li class="navbar-item"><a class="navbar-link" href="offers.html">Offers</a></li>
+
+    <li class="navbar-item"><a href="#" class="navbar-link" id="mobileAccessoriesBtn">Accessories
+            <i class="fa-solid fa-caret-down display"></i>
+        </a>
+
+        <div class="mobile-dropdown" id="mobileAccessoriesDropdown">
+            <div class="mega-text" style="text-decoration: none;"><a
+                    href="products/laptop-accessories/products-page.html"
+                    style="width: 250px; margin-bottom: 20px;">Laptop Bags</a></div>
+            <div class="mega-text" style="text-decoration: none;"><a
+                    href="products/display-cables/products-page.html" style="width: 250px; margin-bottom: 20px;">All
+                    Accessories</a></div>
+        </div>
+    </li>
+    <li class="navbar-item"><a class="navbar-link" href="support-page.html">Support</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="docs.html">Docs</a></li>
+</div>
+
+<!--Aboutus HERO -->
+<section class="aboutus-hero-section">
+    <div class="hero-content">
+        <h1 class="aboutus-hero-h1">About PC Centre</h1>
+        <p class="aboutus-hero-para">Your One-Stop Computer & IT Solution</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="main-about-section" style="background: #f3efef;">
+    <section class="aboutus-container">
+        <div class="about">
+            <div class="about-text">
+                <h2 class="about-h2" style="font-weight: bold;">Who We Are</h2>
+                <p class="about-para">
+                    PC Center is a trusted provider of computer hardware, accessories, and
+                    professional IT services. With years of experience, we help individuals
+                    and businesses choose the right technology solutions.
+                </p>
+                <p class="about-para">
+                    Our goal is to provide reliable products, expert technical support, and
+                    long-term customer satisfaction.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
+            </div>
+        </div>
+
+        <!-- STATS -->
+        <div class="about-stats">
+            <div class="stat-box">
+                <h3 class="about-stats-h3">1000+</h3>
+                <p class="about-stats-para">Products</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="about-stats-h3">2+ Years</h3>
+                <p class="about-stats-para">Experience</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="about-stats-h3">500+</h3>
+                <p class="about-stats-para">Happy Clients</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="about-stats-h3">24/7</h3>
+                <p class="about-stats-para">Support</p>
+            </div>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="about-services">
+            <h2 class="about-services-h2" style="font-weight: bold;">What We Offer</h2>
+
+            <div class="service-grid">
+                <a href="" style="text-decoration: none; color: black;">
+                    <div class="about-service">
+                        <i class="fas fa-desktop fa-2x"></i>
+                        <h4 class="about-service-h4">PC & Accessories</h4>
+                        <p class="about-service-para"><em>Wide range of branded computer products.</em></p>
+                    </div>
+                </a>
+
+                <a href="" style="text-decoration: none; color: #000;">
+                    <div class="about-service">
+                        <i class="fas fa-tools fa-2x"></i>
+                        <h4 class="about-service-h4">Repair & Upgrade</h4>
+                        <p class="about-service-para"><em>Professional repair and upgrade services.</em></p>
+                    </div>
+                </a>
+
+                <a href="" style="text-decoration: none; color: #000;">
+                    <div class="about-service">
+                        <i class="fas fa-network-wired fa-2x"></i>
+                        <h4 class="about-service-h4">Networking</h4>
+                        <p class="about-service-para"><em>Home & business networking solutions.</em></p>
+                    </div>
+                </a>
+
+                <a href="" style="text-decoration: none; color: #000;">
+                    <div class="about-service">
+                        <i class="fas fa-headset fa-2x"></i>
+                        <h4 class="about-service-h4">After Sales Support</h4>
+                        <p class="about-service-para"><em>Reliable customer and technical support.</em></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- WHY US -->
+        <div class="about-why">
+            <h2 class="about-why-h2" style="font-weight: bold;">Why PC Center?</h2>
+            <ul class="why-list">
+                <li class="why-item"><i class="fa-solid fa-check" style="color: #0f9911; "></i>Genuine products with
+                    warranty</li>
+                <li class="why-item"><i class="fa-solid fa-check" style="color: #0f9911;"></i> Affordable pricing</li>
+                <li class="why-item"><i class="fa-solid fa-check" style="color: #0f9911;"></i> Skilled technicians</li>
+                <li class="why-item"><i class="fa-solid fa-check" style="color: #0f9911;"></i> Customer-focused service
+                </li>
+            </ul>
+        </div>
+
+    </section>
+</section>
+
+
+<section class="footer">
+    <!-- ========== BODY FOOTER  ========== -->
+    <footer class="pc-footer">
+
+        <div class="footer-container">
+
+            <!-- ABOUT -->
+            <div class="footer-section">
+                <h3 class="footer-h3">About PC-Centre</h3>
+                <p class="footer-para">
+                    <em>
+                        PC-Centre is a trusted provider of IT products & services with 2+ years of experience
+                        and 1,000+ products from top brands. We offer hardware, software, networking,
+                        installations, and enterprise solutions with strong after-sales support.
+                    </em>
+                </p>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="footer-section">
+                <h3 class="footer-h3">Quick Links</h3>
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="index.html" class="footer-a">Home</a></li>
+                    <li class="footer-li"><a href="aboutus-page.html" class="footer-a">About</a></li>
+                    <li class="footer-li"><a href="products/monitor/products-page.html" class="footer-a">Products</a></li>
+                    <li class="footer-li"><a href="products/display-cables/products-page.html" class="footer-a">Accessories</a></li>
+                    <li class="footer-li"><a href="offers.html" class="footer-a">Offers</a></li>
+                    <li class="footer-li"><a href="support-page.html" class="footer-a">Support</a></li>
+                    <li class="footer-li"><a href="docs.html" class="footer-a">Docs</a></li>
+                </ul>
+            </div>
+
+            <!-- PRODUCT CATEGORIES -->
+            <div class="footer-section">
+                <h3 class="footer-h3">Categories</h3>
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="products/monitor/products-page.html" class="footer-a">Monitor</a></li>
+                    <li class="footer-li"><a href="products/mother-board/products-page.html" class="footer-a">Motherboards </a></li>
+                    <li class="footer-li"><a href="products/laptop/products-page.html" class="footer-a">Laptops</a></li>
+                    <li class="footer-li"><a href="products/storage-devices/products-page.html" class="footer-a">Storage-devices</a></li>
+                    <li class="footer-li"><a href="products/memory/products-page.html" class="footer-a">Memory</a></li>
+                    <li class="footer-li"><a href="products/processors/products-page.html" class="footer-a">Processors</a></li>
+                    <li class="footer-li"><a href="products/laptop-accessories/products-page.html" class="footer-a">Laptop-bags</a></li>
+                    <li class="footer-li"><a href="products/display-cables/products-page.html" class="footer-a">All-Accessories</a></li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="footer-section">
+                <h3 class="footer-h3">Contact Us</h3>
+                <p class="footer-paragraph"><em> Saddar, Karachi – ORIENT CENTER </em></p>
+
+                <button class="location-btn"
+                    onclick="window.open('https://maps.google.com/?q=Orient+Centre+Saddar+Karachi','_blank')">
+                    <i class="fa-solid fa-location-crosshairs"></i> Open Location
+                </button>
+
+                <p class="footer-email"> <b>Email:</b><em> pc-centre@gmail.com</em></p>
+                <p class="footer-phone"> <b>Phone:</b> 03322327180</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 <em> <b>PC-Centre — All Rights Reserved</b></em>
+
+        </div>
+    </footer>
+</section>
+<script src="script.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="fontawesome-free-7.1.0-web/js/all.min.js"></script>
+</body>
+
+</html>

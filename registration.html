@@ -1,0 +1,247 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+    .sign-up{
+        margin-top: 100px;
+        text-align: center;
+        padding: 15px 30px;
+        width: 100%;
+        border-radius: 10px;
+        height: auto;
+        border: none;
+        background-color: #fff;
+    }
+    .sign-up h1{
+        text-transform: capitalize;
+        font-weight: bold;  
+        color: #198754;
+    }
+    .sign-up p{
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    .form-control{
+        border-radius: 5px;
+    }
+    .form-control::placeholder{
+        text-align: left;
+        text-transform: capitalize;
+    }
+    .sign-up a{
+        text-decoration: none;
+        margin-left: 5px;
+        text-transform: capitalize;
+        font-weight: 500;
+        color: #198754;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="sign-up" class="container  d-flex justify-content-center">
+        <div class="col-md-6 col-lg-4 col-10">
+        <div class="sign-up">
+            <h1>petbot</h1>
+            <p>create your acconunt</p>
+            <input type="text" class="form-control p-2 w-100 text-center my-3 mx-1" placeholder="full name">
+            <input type="text" class="form-control p-2 w-100 text-center my-3 mx-1" placeholder="email">
+            <input type="text" class="form-control p-2 w-100 text-center my-3 mx-1" placeholder="password">
+            <input type="text" class="form-control p-2 w-100 text-center my-3 mx-1" placeholder="confirm password">
+            <div class="reg-btn btn text-light my-3 w-100 bg-success text-capitalize">register</div>
+            <p>already have an account?<a href=""  class="text-success" id="open-sign-in">sign in</a></p>
+        </div>
+        </div>
+    </div>
+        <div id="sign-in" class="container log d-flex justify-content-center d-none position-relative top-50">
+        <div class="col-md-6 col-lg-4 col-10">
+        <div id="log" class="sign-up">
+            <h1>petbot</h1>
+            <p>Grete to have you back.</p>
+            <input type="text" class="form-control p-2 w-100 text-center my-3 mx-1" placeholder="email">
+            <input type="text" class="form-control p-2 w-100 text-center my-3 mx-1" placeholder="password">
+            <a href="" class="text-success">forgot password?</a>
+            <div class="reg-btn btn text-light my-3 w-100 bg-success text-capitalize">register</div>
+            <p>dont't have an account?<a href="" class="text-success" id="open-sign-up">sign up</a></p>
+        </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+$(document).ready(function(){
+    // Open Login
+    $("#open-sign-in").click(function(e){
+        e.preventDefault();
+        $("#sign-up").fadeOut(300, function(){
+            $(this).addClass("d-none");
+            $("#sign-in").removeClass("d-none").fadeIn(300);
+        });
+    });
+    
+    // Open Sign Up
+    $("#open-sign-up").click(function(e){
+        e.preventDefault();
+        $("#sign-in").fadeOut(300, function(){
+            $(this).addClass("d-none");
+            $("#sign-up").removeClass("d-none").fadeIn(300);
+        });
+    });
+});
+    </script>
+    <script src="jQuery/download-jQuery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login / Signup</title>
+
+<style>
+/* ===== BASE ===== */
+body{
+  background:#f2f2f2;        /* dim white background */
+  font-family: Arial, sans-serif;
+}
+
+.container{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* ===== CARD ===== */
+.card{
+  background:#ffffff;       /* white form */
+  padding:25px;
+  width:100%;
+  max-width:380px;
+  border-radius:10px;
+  text-align:center;
+  display:none;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card h1{
+  color:#198754;
+  margin-bottom:5px;
+}
+
+.card p{
+  margin-bottom:15px;
+  font-weight:500;
+}
+
+/* ===== INPUT ===== */
+input{
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border-radius:5px;
+  border:1px solid #ccc;
+  text-align:center;
+}
+
+/* ===== BUTTON (Bootstrap outline-dark style) ===== */
+button{
+  width:100%;
+  padding:10px;
+  margin-top:10px;
+  background:transparent;
+  border:2px solid #000;
+  color:#000;
+  border-radius:5px;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#000;
+  color:#fff;
+}
+
+/* ===== LINKS ===== */
+a{
+  color:#198754;
+  text-decoration:none;
+  font-weight:500;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- LOGIN FORM -->
+  <div id="login" class="card">
+    <h1>PetBot</h1>
+    <p>Great to have you back</p>
+
+    <input type="email" placeholder="email">
+    <input type="password" placeholder="password">
+
+    <button>Login</button>
+
+    <p>
+      Don't have an account?
+      <a href="#" id="showSignup">Sign up</a>
+    </p>
+  </div>
+
+  <!-- SIGNUP FORM -->
+  <div id="signup" class="card">
+    <h1>PetBot</h1>
+    <p>Create your account</p>
+
+    <input type="text" placeholder="full name">
+    <input type="email" placeholder="email">
+    <input type="password" placeholder="password">
+    <input type="password" placeholder="confirm password">
+
+    <button>Register</button>
+
+    <p>
+      Already have an account?
+      <a href="#" id="showLogin">Sign in</a>
+    </p>
+  </div>
+
+</div>
+
+<script>
+const login = document.getElementById("login");
+const signup = document.getElementById("signup");
+
+// show signup
+document.getElementById("showSignup").onclick = function(e){
+  e.preventDefault();
+  login.style.display = "none";
+  signup.style.display = "block";
+}
+
+// show login
+document.getElementById("showLogin").onclick = function(e){
+  e.preventDefault();
+  signup.style.display = "none";
+  login.style.display = "block";
+}
+
+// default page load → login
+login.style.display = "block";
+</script>
+
+</body>
+</html>

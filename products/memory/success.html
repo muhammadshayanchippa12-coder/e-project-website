@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Successful</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="container">
+    <h1>Order Successful</h1>
+  </header>
+
+  <main class="container">
+    <section class="success">
+      <div class="tick">✔</div>
+      <h2>Thank you!</h2>
+      <p>Your order has been placed.</p>
+      <div class="row">
+        <span>Product:</span>
+        <span id="success-title"></span>
+      </div>
+      <div class="row">
+        <span>Quantity:</span>
+        <span id="success-qty"></span>
+      </div>
+      <div class="row">
+        <span>Total:</span>
+        <span id="success-total"></span>
+      </div>
+      <div class="row">
+      </div>
+      <div class="actions">
+        <button id="btn-home" class="primary">Back to Home</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <span>&copy; Simple Shop</span>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    initSuccess();
+  </script>
+</body>
+</html>
